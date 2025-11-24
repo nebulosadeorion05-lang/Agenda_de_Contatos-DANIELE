@@ -10,9 +10,8 @@ body {
     h1 {
       text-align: center;
     }
-    .form-container {
-      width: 80%;
-      margin: auto;
+    .input {
+      margin: 5px;
     }
     .form label {
       font-weight: bold;
