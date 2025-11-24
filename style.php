@@ -6,9 +6,7 @@ body {
     }
     h1, h2 {
       color: #4B0082;
-    }
-    h1 {
-      text-align: center;
+      text-align: left;
     }
     .input {
       margin: 5px;
