@@ -1,21 +1,11 @@
 <?php
-require_once "conexao.php";
+include "conexao.php";
 
-if(isset($_POST["excluir"])) {
+$id = $_GET['id'];
 
-    $ID = isset($_POST["ID"]) ? (int)$_POST["ID"] : null;
+$sql = "DELETE FROM contatos WHERE id=$id";
+$conn->query($sql);
 
-    $stmt = $conexao->prepare("DELETE FROM contatos WHERE ID = ?");
-    if ($stmt === false) {
-        header("Location: index.php");
-        exit;
-    }
-    $stmt->bind_param("i", $ID);
-
-    $stmt->execute();
-    $stmt->close();
-
-    header("Location: index.php");
-    exit;
-}
+header("Location: index.php");
+exit;
 ?>
