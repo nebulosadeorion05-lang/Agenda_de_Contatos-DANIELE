@@ -4,7 +4,7 @@ body {
       margin: 0.5rem;
       padding: 0.5rem;
     }
-    h1, h2 {
+    h2 {
       color: #4B0082;
       text-align: left;
     }
