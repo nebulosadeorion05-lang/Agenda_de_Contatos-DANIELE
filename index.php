@@ -10,7 +10,7 @@ include "conexao.php";
 </head>
 <body>
 
-<h2>Cadastrar Contato</h2>
+<h1>Cadastrar Contato</h1>
 
 <form action="salvar.php" method="POST">
     <label for="id">ID:</label><br>
