@@ -5,7 +5,7 @@ if(isset($_POST["excluir"])) {
 
     $ID = isset($_POST["ID"]) ? (int)$_POST["ID"] : null;
 
-    $stmt = $conexao->prepare("DELETE FROM agenda WHERE ID = ?");
+    $stmt = $conexao->prepare("DELETE FROM contatos WHERE ID = ?");
     if ($stmt === false) {
         header("Location: index.php");
         exit;
