@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #222;
+}
+
+h2 {
+  color: #4B0082;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin: 8px 0;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="hidden"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4B0082;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button[type="reset"] {
+  background-color: #666;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f8;
+}
+
+.actions a {
+  margin-right: 6px;
+  text-decoration: none;
+  color: #4B0082;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
