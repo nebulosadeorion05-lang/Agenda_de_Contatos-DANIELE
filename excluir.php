@@ -1,10 +1,17 @@
 <?php
 include "conexao.php";
 
-$id = $_GET['id'];
+if (!isset($_GET['id'])) {
+    header("Location: index.php");
+    exit;
+}
 
-$sql = "DELETE FROM contatos WHERE id=$id";
-$conn->query($sql);
+$id = intval($_GET['id']);
+
+$stmt = $conn->prepare("DELETE FROM contatos WHERE id = ?");
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$stmt->close();
 
 header("Location: index.php");
 exit;
